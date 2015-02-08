@@ -41,8 +41,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Tesseract-Build\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Tesseract-Build\lib\Win32;C:\Tesseract-Build\lib\x64;C:\Tesseract-Build\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Tesseract-Build\include;C:\Tesseract-Build\include\leptonica;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Tesseract-Build\lib\Win32;C:\Tesseract-Build\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -54,7 +54,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\Tesseract-Build\tesseract-ocr\classify;C:\Tesseract-Build\tesseract-ocr\ccutil;C:\Tesseract-Build\tesseract-ocr\ccstruct;C:\Tesseract-Build\tesseract-ocr\ccmain;C:\Tesseract-Build\tesseract-ocr\api;C:\Tesseract-Build\include\leptonica;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Tesseract-Build\tesseract-ocr\classify;C:\Tesseract-Build\tesseract-ocr\ccutil;C:\Tesseract-Build\tesseract-ocr\ccstruct;C:\Tesseract-Build\tesseract-ocr\ccmain;C:\Tesseract-Build\tesseract-ocr\api;C:\Tesseract-Build\include;C:\Tesseract-Build\include\leptonica;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
